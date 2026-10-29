@@ -1,38 +1,101 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap');
+
+.contenedor-app {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #0B0B0B;
+  color: #F5F5F5;
   min-height: 100vh;
+}
+
+.menu-navegacion {
+  background-color: #0B0B0B;
+  border-bottom: 1px solid #2C3E50;
+  color: #F5F5F5;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #D4AF37;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.seccion-principal {
+  padding: 80px 20px;
+  background-color: #0B0B0B;
+}
+
+.seccion-principal h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  color: #D4AF37;
+  margin-bottom: 15px;
+}
+
+.seccion-principal p {
+  font-weight: 300;
+  color: #CCCCCC;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.imagen-destacada {
+  width: 100%;
+  max-width: 650px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 30px 0;
+  box-shadow: 0px 8px 25px rgba(212, 175, 55, 0.15);
+  border: 1px solid #2C3E50;
+}
+
+.boton-accion {
+  background-color: #D4AF37;
+  color: #0B0B0B;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.boton-accion:hover {
+  background-color: #f3c642;
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.4);
+}
+
+.mensaje-sorpresa {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #D4AF37;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.pie-pagina {
+  background-color: #0B0B0B;
+  border-top: 1px solid #2C3E50;
+  color: #888888;
+  padding: 30px;
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 300;
 }
